@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block static_block %}
+<script src="/static/js/login.js?{{curr_time}}"></script>
+{% endblock %}
+{% block content %}
+<!-- Content here -->
+<div class="mb-3">
+    <label for="user_id" class="form-label">User ID</label>
+    <input type="text" class="form-control" id="user_id" placeholder="ID">
+</div>
+<div class="mb-3">
+    <label for="user_pw" class="form-label">User PW</label>
+    <input type='password' class="form-control" id="user_pw" placeholder='PW'>
+</div>
+<button type="button" class="btn btn-primary" onclick="login_request()">Login</button>
+{% endblock %}
