@@ -6,7 +6,7 @@ def get_user(user_id, user_pw):
     cur = None
     conn = None
     try:
-        conn = psycopg2.connect(host='localhost', dbname='postgres', user='postgres', password='postgres', port=5432)
+        conn = psycopg2.connect(host='database-1.cg318ygzj1gt.ap-northeast-2.rds.amazonaws.com', dbname='postgres', user='postgres', password='GKAMuib6FixRnXEfAxUF', port=5432)
         cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
         query = '''
